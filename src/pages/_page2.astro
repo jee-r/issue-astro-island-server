@@ -1,0 +1,11 @@
+---
+import NowServerIsland from '../components/NowServerIsland.astro';
+import Layout from '../layouts/Layout.astro';
+export const prerender = false;
+---
+
+<Layout>
+    <NowServerIsland server:defer/>
+    <div>prerender: False</div>
+    <a href="/">Go to Not Prerendered Page</a>
+</Layout>
